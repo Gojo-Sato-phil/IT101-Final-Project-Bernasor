@@ -1,5 +1,5 @@
 # IT102A-Final-Project-Pascua
-## Terminal Nexus `
+## Terminal Nexus 
 **Janreuben Bernasor & Winston Pascua**
 
 This console-based menu program built in C language for IT102A final project. It contains four working module that user can select from main menu: Pattern Generator, Pascal's Triangle, Grade Calculator & Evaluator, and Palindrome Checker. When the user enter 0 from the menu, the program ends.
