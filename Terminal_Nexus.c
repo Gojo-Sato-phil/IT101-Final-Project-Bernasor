@@ -1,44 +1,54 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 int main(){
-int number;
+int number= -1;
+int i=0;
 printf("========== Terminal Nexus ==========\n");
 do {
     printf("Pattern Generator (1)\n");
     printf("Pascal's Triangle (2)\n");
     printf("Grade Calculator & Evaluator (3)\n");
     printf("Palindrome Checker (4)\n");
-    printf("Enter a number (0 to exit): ");
+    printf("Enter a number (Press 0 to exit): ");
     if (scanf("%d", &number)!=1) {
-        printf("Please enter a valid number between 0 and 4\n");
+        system ("cls");
         while (getchar() != '\n'); 
+        continue;
+        system ("cls");
     }
+    while (getchar() != '\n');
+    system ("cls");
 
+    
 
 } while ( number < 0 || number > 4 );
-    printf("Thank you for using Terminal Nexus\n");
-   
 
-        int rows;
+        int rows, columns;
         int number2;
         if (number==1){
         do {
+        system ("cls");
         printf(" ========== Welcome to the Pattern Generator: Powered by Terminal Nexus ==========\n");
         printf("Right Triangle Pattern Generator (1)\n");
         printf("Square Pattern Generator (2)\n");
-        printf("Isoceles Triangle Pattern Generator (3)\n");
+        printf("Isosceles Triangle Pattern Generator (3)\n");
         printf("Inverted Right Triangle Pattern Generator (4)\n");
         printf("Christmas Tree Pattern Generator (5)\n");
         printf("Enter a number (0 to exit): ");
         if (scanf("%d", &number2)!=1 ){
             printf("Please enter a valid number between 0 and 5\n");
             while (getchar() != '\n');
+            system ("cls");
+            
        } 
-    }while (number2 < 0 || number2 >5 );
-        printf("Thank you for using the Pattern Generator: Powered by Terminal Nexus\n");
+       
 
-             if(number2==1){
+    }while (number2 < 0 || number2 >5 );   
+                
+                if(number2==1){ 
                 while (1){
+                system ("cls");
                 printf("Right Triangle Pattern Generator\n");
                 printf("Enter the number of rows: ");
                if (scanf("%d", &rows)!=1){
@@ -49,17 +59,22 @@ do {
                }
                break;
             }
+
                 for (int i = 1; i <= rows; i++) {
                     for (int j = 1; j <= i; j++) {
                         printf("* ");
                     }
                     printf("\n");
                 }
+                printf ("\n Thank you for using Pattern Generator");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
                 getchar ();
-                getchar ();
+                system ("cls");
 
             }else if (number2==2){
                 while (1){
+                system ("cls");
                 printf("Square Pattern Generator\n");
                 printf("Enter the number of rows: ");
                 if(scanf("%d", &rows)!=1){
@@ -77,12 +92,16 @@ do {
                     }
                     printf("\n");
                 }
-                getchar();
-                getchar();
+                printf ("\n Thank you for using Pattern Generator");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
+                getchar ();
+                system ("cls");
 
             }else if (number2==3){
                 while (1){
-                printf("Isoceles Triangle Pattern Generator\n");
+                system ("cls");
+                printf("Isosceles Triangle Pattern Generator\n");
                 printf("Enter the number of rows: ");
                 if (scanf("%d", &rows)!=1){
                     while (getchar()!='\n');
@@ -101,11 +120,15 @@ do {
                     }
                     printf("\n");
                 }
-                getchar();
-                getchar();
+                printf ("\n Thank you for using Pattern Generator");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
+                getchar ();
+                system ("cls");
 
             }else if (number2==4){
                while(1){
+                system ("cls");
                 printf("Inverted Right Triangle Pattern Generator\n");
                 printf("Enter the number of rows: ");
                 if (scanf("%d", &rows)!=1){
@@ -122,11 +145,16 @@ do {
                     }
                     printf("\n");
                 }
-                getchar();
-                getchar();
+                printf ("\n Thank you for using Pattern Generator");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
+                getchar ();
+                system ("cls");
+
             
             }else if (number2==5){
                 while (1){
+                system ("cls");
                 printf("Christmas Tree Pattern Generator\n");
                 printf("Enter the number of rows: ");
                 if (scanf("%d", &rows)!=1){
@@ -161,14 +189,18 @@ do {
                     }
                         printf("*\n");
                 }
-                    printf("\n");
-            }
-            getchar();
-            getchar();
-   
+                 printf ("\n Thank you for using Pattern Generator");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
+                getchar ();
+                system ("cls");
+
+                }
         } else if (number==2){
         printf("========== Pascal's Triangle Generator: Powered by Terminal Nexus ==========\n");
-         while (1){
+        while (1){
+        system ("cls");
+        printf ("Pascal's Triangle\n");
         printf("Enter the number of rows: ");
         if (scanf("%d", &rows)!=1){
             while (getchar()!='\n');
@@ -193,13 +225,18 @@ do {
             }
             printf("\n");
         }
-        getchar();
-        getchar();
+        printf ("\n Thank you for using Pascal's Triangle");
+                printf("\n Press Enter to Exit...");
+                while (getchar()!= '\n');
+                getchar ();
+                system ("cls");
+    
 
     } else if (number==3){
         float prelim, midterm, semifinals, finals, average;
-        printf ("========== Grade Calculator & Evaluator ==========\n");
-        while (1) {
+   while (1) {
+    system ("cls");
+    printf ("Grade Calculator and Evaluator\n");
     printf("Enter Prelim Grade: ");
     if (scanf("%f", &prelim)!=1){
         while (getchar()!='\n');
@@ -213,6 +250,8 @@ do {
     break;
     }
     while (1) {
+    system ("cls");
+    printf ("Grade Calculator and Evaluator\n");
     printf("Enter Midterm Grade: ");
     if (scanf("%f", &midterm)!=1){
        while (getchar()!='\n');
@@ -226,6 +265,8 @@ do {
     break;
     }
     while (1) {
+    system ("cls");
+    printf ("Grade Calculator and Evaluator\n");
     printf("Enter SemiFinals Grade: ");
     if (scanf("%f", &semifinals)!=1){
         while (getchar ()!= '\n');
@@ -238,6 +279,8 @@ do {
     break;
     }
     while (1) {
+    system ("cls");
+    printf ("Grade Calculator and Evaluator\n");
     printf("Enter Final Grade: ");
     if (scanf("%f", &finals)!=1){
      while (getchar()!= '\n');
@@ -258,8 +301,12 @@ do {
     } else {
         printf("Remarks: FAILED\n");
     }
-    getchar();
-    getchar();
+    printf ("\n Thank you for using Grade Calculator & Evaluator\n");
+    printf("\n Press Enter to Exit...");
+    while (getchar()!= '\n');
+    getchar ();
+    system ("cls");
+    
     
 } else if (number==4){
     
@@ -282,8 +329,15 @@ do {
     } else {
         printf("%s is not a Palindrome.\n", word);
     }
+    printf ("Thank you for using Palindrome Checker");
+    while (getchar () != '\n');
+    getchar();
+
     }
-    getchar();
-    getchar();
- return 0;
+    system ("cls");
+   printf ("\n Thank you for using Terminal Nexus\n");
+    printf("\n Press Enter to Exit...");
+    while (getchar()!= '\n');
+    system ("cls");
+return 0;
 }
