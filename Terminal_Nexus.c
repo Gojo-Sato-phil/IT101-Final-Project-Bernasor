@@ -3,7 +3,10 @@
 #include <stdlib.h>
 int main(){
 int number= -1;
+char menu= 'y';
 int i=0;
+do {
+    system ("cls");
 printf("========== Terminal Nexus ==========\n");
 do {
     printf("Pattern Generator (1)\n");
@@ -32,7 +35,7 @@ do {
         printf(" ========== Welcome to the Pattern Generator: Powered by Terminal Nexus ==========\n");
         printf("Right Triangle Pattern Generator (1)\n");
         printf("Square Pattern Generator (2)\n");
-        printf("Isosceles Triangle Pattern Generator (3)\n");
+        printf("Isoceles Triangle Pattern Generator (3)\n");
         printf("Inverted Right Triangle Pattern Generator (4)\n");
         printf("Christmas Tree Pattern Generator (5)\n");
         printf("Enter a number (0 to exit): ");
@@ -339,5 +342,23 @@ do {
     printf("\n Press Enter to Exit...");
     while (getchar()!= '\n');
     system ("cls");
+    
+    printf ("Do you want to use another operation? (Y)/(N): ");
+    scanf ("%c,", &menu);
+    while (getchar () != '\n');
+    system ("cls");  
+    if (menu== 'Y'|| menu== 'y'){
+     continue;
+    } else if (menu=='N'|| menu== 'n'){
+    break;
+    } else if (menu != 'y'|| menu != 'Y'|| menu != 'N' || menu != 'n') {
+    break;
+    }
+
+} while ( menu != 'n' || menu != 'N');
+printf ("Thank you for using the console");
+
 return 0;
 }
+
+
