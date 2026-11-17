@@ -357,6 +357,7 @@ do {
 
 } while ( menu != 'n' || menu != 'N');
 printf ("Thank you for using the console");
+getchar();
 
 return 0;
 }
